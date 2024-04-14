@@ -6,8 +6,8 @@ import { Separator } from "@/components/ui/separator";
 export function Projects() {
   return (
     <>
-      <h1 className="font-bold text-white">Projects</h1>
-      <Separator className="my-2" />
+      <h1 className="font-bold text-lg text-white">Projects</h1>
+      <Separator className="my-3" />
 
       {DataProjects.map((project, index) => {
         return (
@@ -21,14 +21,14 @@ export function Projects() {
 
               <a
                 href={project.href}
-                className="flex items-center gap-2 font-bold text-white text-base mt-4 hover:text-black transition-colors"
+                className="inline-flex items-center gap-2 text-white text-sm mt-4 hover:text-violet-600 transition-colors"
               >
                 {project.title}
                 <Link size={16} />
               </a>
             </div>
-            <div className="mt-2 mb-10">
-              <p className="text-sm font-thin mb-4">{project.description}</p>
+            <div className="mt-2 mb-11">
+              <p className="text-sm mb-4">{project.description}</p>
               <div className="flex gap-1">
                 {project.technologies.map((tech, index) => (
                   <Badge key={index} variant={"secondary"}>
@@ -37,7 +37,6 @@ export function Projects() {
                 ))}
               </div>
             </div>
-            <Separator className="mb-2" />
           </div>
         );
       })}

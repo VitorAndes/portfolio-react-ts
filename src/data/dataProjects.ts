@@ -1,4 +1,4 @@
- interface Project {
+ interface ProjectType {
   image: string;
   title: string;
   href: string;
@@ -6,7 +6,7 @@
   technologies: string[];
 }
 
-export const DataProjects: Project[] = [
+export const DataProjects: ProjectType[] = [
   {
     image: "https://source.unsplash.com/random",
     title: "My project",

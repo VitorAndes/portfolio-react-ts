@@ -1,11 +1,11 @@
-interface ICoursesProps {
+interface CoursesType {
     name: string;
     description: string;
     href: string;
     conclusion?: string;
 }
 
-export const DataCourses: ICoursesProps[] = [
+export const DataCourses: CoursesType[] = [
     {
         conclusion: "Cursando",
         name: "Análise e desenvolvimento de sistemas",

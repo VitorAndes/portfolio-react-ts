@@ -13,7 +13,7 @@ export default function App() {
         </Card>
         <img
           src="https://media1.tenor.com/m/kxiro8Eecb8AAAAd/coding.gif"
-          className="w-72 h-[260px] rounded-lg shadow shadow-violet-200 hover:shadow-violet-600 hover:shadow-lg hover:scale-105 transition-all duration-200"
+          className="w-80 h-[259px] rounded-lg shadow shadow-violet-200 hover:shadow-violet-600 hover:shadow-lg hover:scale-105 transition-all duration-200"
         />
       </div>
       <Card cardProjcts>
