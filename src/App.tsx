@@ -33,7 +33,7 @@ export default function App() {
         >
           <img
             src="https://media1.tenor.com/m/kxiro8Eecb8AAAAd/coding.gif"
-            className="w-72 xl:w-90 h-[259px] rounded-lg shadow shadow-violet-200 hover:shadow-violet-600 hover:shadow-lg hover:scale-105 transition-all duration-200"
+            className="w-72 xl:w-90 h-[259px] rounded-lg shadow shadow-white hover:shadow-slate-200 hover:shadow-lg hover:scale-105 transition-all duration-200"
           />
         </motion.div>
       </div>

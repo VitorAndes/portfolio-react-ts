@@ -83,6 +83,6 @@
   @apply w-1 bg-transparent
   }
   ::-webkit-scrollbar-thumb{
-  @apply rounded-md bg-[#EEE4B1]/40
+  @apply bg-slate-100/60
   }
 }

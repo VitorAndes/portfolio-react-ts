@@ -15,7 +15,7 @@ export function Projects() {
             <div>
               <img
                 src={project.image}
-                className="w-full h-48 rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-violet-400"
+                className="w-full h-48 rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-slate-400"
                 alt="Imagem do projeto"
               />
 

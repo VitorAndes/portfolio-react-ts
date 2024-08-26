@@ -8,26 +8,23 @@ export function About() {
         <img
           src="https://github.com/vitorandes.png"
           alt="foto de Vitor Andes"
-          className="w-32 h-32 rounded-full shadow shadow-[#EEE4B1]"
+          className="w-32 h-32 rounded-full shadow shadow-slate-200"
         />
-        <h1 className="text-xl font-bold mt-4 text-white">Vitor Andes</h1>
+        <h1 className="text-xl font-bold mt-2 text-white">Vitor Andes</h1>
       </div>
-      <div className="mt-6">
+      <div className="mt-2">
         <h2 className="text-lg font-bold text-white">About</h2>
         <Separator className="my-2" />
-        <p className="text-sm ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt sint
-          sit iure vitae voluptates sed doloribus autem fuga, quisquam possimus
-          non! Quidem consectetur nesciunt exercitationem. Ullam eum
-          exercitationem harum eius.
+        <p className="text-sm leading-snug tracking-wide">
+        Sou Vitor andes dos santos, um Desenvolvedor com experiência em web, especializado em front-end.Com um histórico sólido em <strong className="">Html, css, javascript, typescript, react, node e Java</strong>.Meu objetivo é continuar crescendo na área de Desenvolvimento web, aplicando minhas habilidades para criar soluções inovadoras.
         </p>
       </div>
-      <div className="flex gap-2 mt-6">
+      <div className="flex gap-2 mt-2">
         {DataLinks.map((link, index) => {
           const LinkIcon = link.icon;
           return (
             <a
-              className="text-white hover:text-violet-600 hover:scale-105 transition-all rounded-md p-1.5"
+              className="text-white hover:text-violet-600 hover:scale-105 transition-all rounded-md mt-2"
               href={link.href}
               target="_blank"
               key={index}
