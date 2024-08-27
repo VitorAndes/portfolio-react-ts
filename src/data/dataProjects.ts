@@ -2,33 +2,26 @@
   image: string;
   title: string;
   href: string;
+  url: string;
   description: string;
   technologies: string[];
 }
 
 export const DataProjects: ProjectType[] = [
   {
-    image: "https://i.pinimg.com/236x/e0/ab/b0/e0abb0f9ec876bf6f81fdd9a68526fac.jpg",
-    title: "My project",
-    href: "",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore, ut s",
-    technologies: ["react", `angular`],
+    image: "https://i.imgur.com/cjexL9v.png",
+    title: "Nlw expert notes",
+    href: "https://github.com/VitorAndes/nlw-expert-notes",
+    description: "Um app para criar e gerenciar notas de forma prática e intuitiva.",
+    technologies: ["react", "tailwind", "typescript"],
+    url: "nlw-expert-notes-xi.vercel.app/"
   },
   {
-    image: "https://i.pinimg.com/236x/a3/36/a6/a336a6e0082d4344bb58fa43d017a6f7.jpg",
-    title: "My project",
-    href: "",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore, ut s",
-    technologies: ["react", "vue.js"],
-  },
-  {
-    image: "https://i.pinimg.com/564x/7f/bd/e6/7fbde618feffc862db5d75381ef49b88.jpg",
-    title: "My project",
-    href: "",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore, ut s",
-    technologies: ["react", "next.js"],
+    image: "https://i.imgur.com/a3cYXNu.png",
+    title: "BeautySalon",
+    href: "https://github.com/VitorAndes/code-beautysalon",
+    description: "Uma landing page de salão de beleza",
+    technologies: ["html", "css", "javascript"],
+    url: "vitorandes.github.io/code-beautysalon/"
   },
 ];

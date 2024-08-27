@@ -13,14 +13,17 @@ export function Projects() {
         return (
           <div key={index}>
             <div>
-              <img
-                src={project.image}
-                className="w-full h-48 rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-slate-400"
-                alt="Imagem do projeto"
-              />
+              <a href={project.url} target="_blank">
+                <img
+                  src={project.image}
+                  className="w-full h-48 rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-slate-400"
+                  alt="Imagem do projeto"
+                />
+              </a>
 
               <a
                 href={project.href}
+                target="_blank"
                 className="inline-flex items-center gap-2 text-white text-sm mt-4 hover:text-violet-600 transition-colors"
               >
                 {project.title}
