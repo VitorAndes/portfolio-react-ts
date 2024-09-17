@@ -24,4 +24,12 @@ export const DataProjects: ProjectType[] = [
     technologies: ["html", "css", "javascript"],
     url: "vitorandes.github.io/code-beautysalon/"
   },
+  {
+    image: "https://i.imgur.com/acTTKJp.png",
+    title: "Planejador de metas semanais",
+    href: "https://github.com/VitorAndes/nlw-pocket-frontend",
+    url: "https://planejador-semanal-andes.vercel.app/",
+    description: "um aplicativo desenvolvido para auxiliar os usuários na definição, acompanhamento e realização de suas metas semanais.",
+    technologies: ["react", "typescript", "tailwind", "fastify"]
+  }
 ];
