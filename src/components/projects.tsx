@@ -1,7 +1,7 @@
-import { Badge } from "./ui/badge";
-import { Link } from "lucide-react";
-import { DataProjects } from "@/data/dataProjects";
 import { Separator } from "@/components/ui/separator";
+import { DataProjects } from "@/data/dataProjects";
+import { Link } from "lucide-react";
+import { Badge } from "./ui/badge";
 
 export function Projects() {
   return (
@@ -12,7 +12,6 @@ export function Projects() {
       {DataProjects.map((project, index) => {
         return (
           <div key={index}>
-            <div>
               <a href={project.url} target="_blank">
                 <img
                   src={project.image}
@@ -29,10 +28,9 @@ export function Projects() {
                 {project.title}
                 <Link size={16} />
               </a>
-            </div>
             <div className="mt-2 mb-11">
               <p className="text-sm mb-4">{project.description}</p>
-              <div className="flex gap-1">
+              <div className="flex flex-wrap gap-1">
                 {project.technologies.map((tech, index) => (
                   <Badge key={index} variant={"secondary"}>
                     {tech}

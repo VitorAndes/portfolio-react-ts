@@ -1,5 +1,5 @@
-import { DataLinks } from "../data/dataLinks";
 import { Separator } from "@/components/ui/separator";
+import { DataLinks } from "../data/dataLinks";
 
 export function About() {
   return (
@@ -16,7 +16,7 @@ export function About() {
         <h2 className="text-lg font-bold text-white">About</h2>
         <Separator className="my-2" />
         <p className="text-sm leading-snug tracking-wide">
-        Sou Vitor andes dos santos, um Desenvolvedor com experiência em web, especializado em front-end.Com um histórico sólido em <strong className="">Html, css, javascript, typescript, react, node e Java</strong>.Meu objetivo é continuar crescendo na área de Desenvolvimento web, aplicando minhas habilidades para criar soluções inovadoras.
+        Sou Vitor andes dos santos, um Desenvolvedor com experiência em web, especializado em front-end. Com um histórico sólido em <strong className="">Html, css, javascript, typescript, react, node e Java</strong>.Meu objetivo é continuar crescendo na área de Desenvolvimento web, aplicando minhas habilidades para criar soluções inovadoras.
         </p>
       </div>
       <div className="flex gap-2 mt-2">
