@@ -3,8 +3,8 @@ import { DataLinks } from "../data/dataLinks";
 
 export function About() {
   return (
-    <div className="h-[452px]">
-      <div className="flex flex-col items-center">
+    <div className="h-full">
+      <div className="flex flex-1 flex-col items-center">
         <img
           src="https://github.com/vitorandes.png"
           alt="foto de Vitor Andes"

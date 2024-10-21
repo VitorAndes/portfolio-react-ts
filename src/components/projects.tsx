@@ -23,7 +23,7 @@ export function Projects() {
               <a
                 href={project.href}
                 target="_blank"
-                className="inline-flex items-center gap-2 text-white text-sm mt-4 hover:text-violet-600 transition-colors"
+                className="inline-flex items-center gap-2 text-white font-bold mt-4 hover:text-violet-600 transition-colors"
               >
                 {project.title}
                 <Link size={16} />

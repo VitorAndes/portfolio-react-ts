@@ -1,9 +1,9 @@
-import { Card } from "@/components/card";
 import { About } from "@/components/about";
+import { Card } from "@/components/card";
 import { Projects } from "@/components/projects";
-import { Technologies } from "./components/technologies";
-import { Courses } from "./components/courses";
 import { motion } from "framer-motion";
+import { Courses } from "./components/courses";
+import { Technologies } from "./components/technologies";
 
 export default function App() {
   return (
@@ -33,7 +33,7 @@ export default function App() {
         >
           <img
             src="https://media1.tenor.com/m/kxiro8Eecb8AAAAd/coding.gif"
-            className="w-72 xl:w-90 h-[259px] rounded-lg shadow shadow-white hover:shadow-slate-200 hover:shadow-lg hover:scale-105 transition-all duration-200"
+            className="w-72 xl:w-90 h-[330px] rounded-lg shadow shadow-white hover:shadow-slate-200 hover:shadow-lg hover:scale-105 transition-all duration-200"
           />
         </motion.div>
       </div>
@@ -46,7 +46,7 @@ export default function App() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <Card cardProjcts>
+        <Card cardProjects>
           <Projects />
         </Card>
       </motion.div>

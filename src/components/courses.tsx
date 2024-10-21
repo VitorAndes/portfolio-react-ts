@@ -1,10 +1,10 @@
-import { Separator } from "./ui/separator";
 import { DataCourses } from "@/data/dataCourses";
+import { Separator } from "./ui/separator";
 
 export function Courses() {
   return (
     <>
-      <div className="h-[408px]">
+      <div className="h-full">  
         <h1 className="font-bold text-lg text-white">Courses</h1>
         <Separator className="my-3" />
         <div className="flex flex-col gap-3.5">
