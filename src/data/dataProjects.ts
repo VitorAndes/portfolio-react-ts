@@ -18,10 +18,10 @@ export const DataProjects: ProjectType[] = [
     technologies: ["react", "tailwind", "typescript"],
   },
   {
-    image: "https://i.imgur.com/SfZq34S.png",
-    title: "Planilha de gastos",
+    image: "https://i.imgur.com/d2RRYKi.png",
+    title: "Gerenciador de gastos",
     href: "https://github.com/VitorAndes/planilha-de-gastos",
-    url: "https://planilha-de-gastos.vercel.app/",
+    url: "https://andesfinance.vercel.app/",
     description: "um app desenvolvido para organizar os gastos",
     technologies: ["react", "typescript", "shadcnUI", "recharts"],
   },

@@ -76,13 +76,13 @@
 }
 
 @layer base {
-  ::-webkit-scrollbar-thumb{
-  @apply bg-transparent
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
   }
-  ::-webkit-scrollbar{
-  @apply w-1 bg-transparent
+  ::-webkit-scrollbar {
+    @apply w-1 bg-transparent;
   }
-  ::-webkit-scrollbar-thumb{
-  @apply bg-slate-100/60
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-100/60;
   }
 }
