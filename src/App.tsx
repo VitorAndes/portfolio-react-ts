@@ -11,7 +11,7 @@ export default function App() {
       {/* Card about */}
       <div className="col-span-1 md:grid md:grid-cols-2 lg:grid-cols-1 w-full gap-4 ">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
             duration: 1.8,
@@ -71,11 +71,20 @@ export default function App() {
         </motion.div>
       </div>
       {/* Card Projects */}
-      <div className="col-span-1 row-span-3 lg:col-span-2 mb-4 ">
+      <motion.div
+        initial={{ opacity: 0, y: -300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1.8,
+          delay: 1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        className="col-span-1 row-span-3 lg:col-span-2 mb-4 "
+      >
         <Card cardProjects>
           <Projects />
         </Card>
-      </div>
+      </motion.div>
     </div>
   );
 }
