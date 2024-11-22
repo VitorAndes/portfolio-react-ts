@@ -3,7 +3,7 @@ import { DataLinks } from "../data/dataLinks";
 
 export function About() {
   return (
-    <div className="h-full">
+    <>
       <div className="flex flex-1 flex-col gap-2 items-center">
         <img
           src="https://github.com/vitorandes.png"
@@ -32,13 +32,15 @@ export function About() {
               className="text-white hover:text-violet-600 hover:scale-105 transition-all rounded-md mt-2"
               href={link.href}
               target="_blank"
+              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               key={index}
+              rel="noreferrer"
             >
               <LinkIcon size={24} />
             </a>
           );
         })}
       </div>
-    </div>
+    </>
   );
 }

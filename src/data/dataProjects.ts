@@ -9,6 +9,14 @@ interface ProjectType {
 
 export const DataProjects: ProjectType[] = [
   {
+    image: "https://i.imgur.com/8TXnBnK.png",
+    title: "Gerenciador de gastos",
+    href: "https://github.com/VitorAndes/planilha-de-gastos",
+    url: "https://andesfinance.vercel.app/",
+    description: "um app desenvolvido para organizar os gastos",
+    technologies: ["react", "typescript", "shadcnUI", "recharts"],
+  },
+  {
     image: "https://i.imgur.com/cjexL9v.png",
     title: "Nlw expert notes",
     href: "https://github.com/VitorAndes/nlw-expert-notes",
@@ -17,14 +25,7 @@ export const DataProjects: ProjectType[] = [
       "Um app para criar e gerenciar notas de forma prática e intuitiva.",
     technologies: ["react", "tailwind", "typescript"],
   },
-  {
-    image: "https://i.imgur.com/d2RRYKi.png",
-    title: "Gerenciador de gastos",
-    href: "https://github.com/VitorAndes/planilha-de-gastos",
-    url: "https://andesfinance.vercel.app/",
-    description: "um app desenvolvido para organizar os gastos",
-    technologies: ["react", "typescript", "shadcnUI", "recharts"],
-  },
+
   {
     image: "https://i.imgur.com/acTTKJp.png",
     title: "Planejador de metas semanais",

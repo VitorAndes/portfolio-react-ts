@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface ICardProps extends ComponentProps<"div"> {
@@ -10,11 +10,11 @@ export function Card({ cardProjects, ...card }: ICardProps) {
     <div
       {...card}
       className={twMerge(
-        "bg-slate-950/30 p-8 rounded-lg shadow shadow-white hover:shadow-slate-200 hover:shadow-lg hover:scale-105 transition-all duration-200 hover:bg-zinc-900",
+        "bg-zinc-950/80 p-8 rounded-lg shadow shadow-white hover:shadow-slate-200 hover:shadow-lg hover:scale-105 transition-all duration-200 hover:bg-zinc-900 mb-4",
         cardProjects
-          ? "lg:h-full lg:max-w-[800px] overflow-y-scroll"
-          : "max-w-96 h-full"
+          ? "lg:max-w-[800px] h-full lg:max-h-[940px] lg:overflow-y-scroll "
+          : "w-full lg:max-w-96 h-full"
       )}
-    ></div>
+    />
   );
 }

@@ -6,21 +6,17 @@ export function Technologies() {
     <>
       <h1 className="font-bold text-xl text-white">Technologies</h1>
       <Separator className="my-3" />
-      <div className="grid grid-cols-3 gap-6">
-        {DataTechnologies.map((Technologies, index) => {
+      <div className="flex flex-wrap h-full gap-4 items-center justify-center p-4 ">
+        {DataTechnologies.map((Technologies) => {
           return (
-            <div
-              key={index}
-              className="flex flex-col gap-2 my-3 items-center justify-center "
-            >
-              <img
-                src={Technologies.icon}
-                width={70}
-                height={70}
-                className="rounded-sm hover:shadow-lg hover:shadow-violet-600 hover:scale-105 transition-all"
-              />
-              {/* <p>{Technologies.name}</p> */}
-            </div>
+            <img
+              key={Technologies.name}
+              alt={Technologies.name}
+              src={Technologies.icon}
+              width={60}
+              height={60}
+              className="rounded-sm hover:shadow-lg hover:shadow-violet-600 hover:scale-105 transition-all"
+            />
           );
         })}
       </div>

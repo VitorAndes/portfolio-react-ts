@@ -10,7 +10,7 @@ export const DataTechnologies: TechnologiesType[] = [
   },
   {
     name: "Typescript",
-    icon: "https://static-00.iconduck.com/assets.00/file-type-typescript-official-icon-256x256-aavrgmi0.png",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcr9ErjixrOB4brfXICewuiMmzsvkUJ4jlHg&s",
   },
   {
     name: "Javascript",
