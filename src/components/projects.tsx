@@ -15,7 +15,7 @@ export function Projects() {
             <a href={project.url} target="_blank" rel="noreferrer">
               <img
                 src={project.image}
-                className="w-full h-full rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-slate-400"
+                className="w-full h-[400px] rounded-lg shadow-md hover:shadow-white transition-all duration-500 border border-slate-400"
                 alt="Imagem do projeto"
               />
             </a>

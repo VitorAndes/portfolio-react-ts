@@ -17,15 +17,19 @@ export const DataTechnologies: TechnologiesType[] = [
     icon: "https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png",
   },
   {
-    name: "Next.js",
-    icon: "https://www.wpgraphql.com/_next/image?url=%2Flogos%2Flogo-nextjs.png&w=384&q=75",
+    name: "NodeJs",
+    icon: "https://www.stickersdevs.com.br/wp-content/uploads/2022/01/nodejs-logo-adesivo-sticker.png",
   },
   {
-    name: "Tailwind",
-    icon: "https://res.cloudinary.com/arcjet-media/image/upload/v1608734952/z8hzeszc9eb3sp3vp3qc.jpg",
+    name: "Kotlin",
+    icon: "https://cms-assets.tutsplus.com/cdn-cgi/image/width=360/uploads/users/1499/posts/29328/preview_image/kotlin.jpg",
   },
   {
-    name: "Shadcn",
-    icon: "https://suhelmakkad.gallerycdn.vsassets.io/extensions/suhelmakkad/shadcn-ui/0.1.1/1695843310552/Microsoft.VisualStudio.Services.Icons.Default",
+    name: "MySQL",
+    icon: "https://images.sftcdn.net/images/t_app-icon-m/p/917c77e8-96d1-11e6-8453-00163ed833e7/3780880766/mysql-com-icon.png",
+  },
+  {
+    name: "Java",
+    icon: "https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256",
   },
 ];
