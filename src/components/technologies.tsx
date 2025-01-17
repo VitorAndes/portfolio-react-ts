@@ -5,7 +5,7 @@ export function Technologies() {
 	return (
 		<>
 			<h1 className="font-bold text-xl text-white">Technologies</h1>
-			<Separator className="my-3" />
+			<Separator className="mt-3 mb-8" />
 			<div className="flex flex-wrap gap-y-12 gap-x-4 p-4">
 				{DataTechnologies.map((Technologies) => {
 					return (
@@ -13,9 +13,9 @@ export function Technologies() {
 							key={Technologies.name}
 							alt={Technologies.name}
 							src={Technologies.icon}
-							width={60}
-							height={60}
-							className="rounded-sm hover:shadow-lg hover:shadow-violet-600 hover:scale-105 transition-all"
+							width={50}
+							height={50}
+							className="rounded-xl hover:shadow-lg hover:shadow-violet-600 hover:scale-105 transition-all"
 						/>
 					);
 				})}

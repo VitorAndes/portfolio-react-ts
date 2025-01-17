@@ -9,7 +9,7 @@ export type ProjectType = {
 
 export const DataProjects: ProjectType[] = [
 	{
-		image: "https://i.imgur.com/8TXnBnK.png",
+		image: "https://i.imgur.com/8OD1QFx.png",
 		title: "Gerenciador de gastos",
 		href: "https://github.com/VitorAndes/planilha-de-gastos",
 		url: "https://andesfinance.vercel.app/",
@@ -25,9 +25,8 @@ export const DataProjects: ProjectType[] = [
 			"Um app para criar e gerenciar notas de forma prática e intuitiva.",
 		technologies: ["react", "tailwind", "typescript"],
 	},
-
 	{
-		image: "https://i.imgur.com/acTTKJp.png",
+		image: "https://i.imgur.com/RD1G516.png",
 		title: "Planejador de metas semanais",
 		href: "https://github.com/VitorAndes/nlw-pocket-frontend",
 		url: "https://planejador-semanal-andes.vercel.app/",

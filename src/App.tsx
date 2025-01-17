@@ -1,91 +1,42 @@
-import { About } from "@/components/about";
-import { Card } from "@/components/card";
-import { Projects } from "@/components/projects";
-import { motion } from "framer-motion";
+import { About } from "./components/about";
 import { Courses } from "./components/courses";
-import { Technologies } from "./components/technologies";
+import { Projects } from "./components/projects";
 
 export default function App() {
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 p-4 gap-4">
-			{/* Card about */}
-			<div className="col-span-1 md:grid md:grid-cols-2 lg:grid-cols-1 w-full gap-4 ">
-				<motion.div
-					initial={{ opacity: 0, x: -100 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{
-						duration: 1.8,
-						delay: 0.8,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
+		<div className="flex flex-col items-center p-4">
+			<header className="sticky z-10 top-4">
+				<nav className="w-96 bg-zinc-950/40 backdrop-blur p-3 rounded-3xl shadow shadow-violet-600 hover:shadow-zinc-200 transition-all duration-200">
+					<ul className="flex items-center justify-center gap-9">
+						<li className="hover:text-violet-600 font-bold text-sm">
+							<a href="#About">About</a>
+						</li>
+						<li className="hover:text-violet-600 font-bold text-sm">
+							<a href="#Projects">Projects</a>
+						</li>
+						<li className="hover:text-violet-600 font-bold text-sm">
+							<a href="#Courses">Courses</a>
+						</li>
+						<li className="hover:text-violet-600 font-bold text-sm">
+							<a href="#Contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main className="flex flex-col  justify-center max-w-7xl p-8 mt-12">
+				<section
+					id="About"
+					className=" h-screen flex items-center justify-between gap-3 w-full"
 				>
-					<Card>
-						<About />
-					</Card>
-				</motion.div>
-
-				<motion.div
-					initial={{ opacity: 0, x: 100 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{
-						duration: 1.8,
-						delay: 0.8,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
-				>
-					<img
-						src="https://media1.tenor.com/m/kxiro8Eecb8AAAAd/coding.gif"
-						className="w-full lg:w-72 xl:w-96 h-full rounded-lg shadow shadow-violet-600 hover:shadow-slate-200 hover:shadow-md  transition-all duration-200"
-						alt="gif de notebook"
-					/>
-				</motion.div>
-			</div>
-
-			{/* Card tech and courses */}
-			<div className="col-span-1 md:grid md:grid-cols-2 lg:grid-cols-1 gap-4 h-full">
-				<motion.div
-					initial={{ opacity: 0, x: 100 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{
-						duration: 1.8,
-						delay: 0.8,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
-				>
-					<Card>
-						<Technologies />
-					</Card>
-				</motion.div>
-				<motion.div
-					initial={{ opacity: 0, y: 300 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{
-						duration: 1.8,
-						delay: 1,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
-				>
-					<Card>
-						<Courses />
-					</Card>
-				</motion.div>
-			</div>
-			{/* Card Projects */}
-			<div className="col-span-1 row-span-3 lg:col-span-2 h-full">
-				<motion.div
-					initial={{ opacity: 0, y: -300 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{
-						duration: 1.8,
-						delay: 1,
-						ease: [0, 0.71, 0.2, 1.01],
-					}}
-				>
-					<Card cardProjects>
-						<Projects />
-					</Card>
-				</motion.div>
-			</div>
+					<About />
+				</section>
+				<section id="Projects" className="mt-12 pt-8">
+					<Projects />
+				</section>
+				<section id="Courses" className="mt-12 pt-8">
+					<Courses />
+				</section>
+			</main>
 		</div>
 	);
 }
