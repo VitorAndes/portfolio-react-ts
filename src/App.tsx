@@ -1,42 +1,30 @@
 import { About } from "./components/about";
-import { Courses } from "./components/courses";
+import { Contact } from "./components/contact";
+import { Navigation } from "./components/navigation";
 import { Projects } from "./components/projects";
+import { Technologies } from "./components/technologies";
 
 export default function App() {
 	return (
-		<div className="flex flex-col items-center p-4">
-			<header className="sticky z-10 top-4">
-				<nav className="w-96 bg-zinc-950/40 backdrop-blur p-3 rounded-3xl shadow shadow-violet-600 hover:shadow-zinc-200 transition-all duration-200">
-					<ul className="flex items-center justify-center gap-9">
-						<li className="hover:text-violet-600 font-bold text-sm">
-							<a href="#About">About</a>
-						</li>
-						<li className="hover:text-violet-600 font-bold text-sm">
-							<a href="#Projects">Projects</a>
-						</li>
-						<li className="hover:text-violet-600 font-bold text-sm">
-							<a href="#Courses">Courses</a>
-						</li>
-						<li className="hover:text-violet-600 font-bold text-sm">
-							<a href="#Contact">Contact</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<main className="flex flex-col  justify-center max-w-7xl p-8 mt-12">
+		<div className="flex flex-col items-center">
+			<main>
 				<section
 					id="About"
-					className=" h-screen flex items-center justify-between gap-3 w-full"
+					className="bg-[url('./public/bg-about.webp')] rounded-b-[50px] bg-cover h-screen flex flex-col justify-center items-center gap-5 w-full"
 				>
 					<About />
 				</section>
-				<section id="Projects" className="mt-12 pt-8">
+				<section className="flex justify-center m-auto p-4">
+					<Technologies />
+				</section>
+				<section id="Projects" className="bg-zinc-950 rounded-t-[50px]">
 					<Projects />
 				</section>
-				<section id="Courses" className="mt-12 pt-8">
-					<Courses />
+				<section id="Contact" className="">
+					<Contact />
 				</section>
 			</main>
+			<Navigation />
 		</div>
 	);
 }

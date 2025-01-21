@@ -5,6 +5,7 @@ export type ProjectType = {
 	url: string;
 	description: string;
 	technologies: string[];
+	right?: boolean;
 };
 
 export const DataProjects: ProjectType[] = [
@@ -15,6 +16,7 @@ export const DataProjects: ProjectType[] = [
 		url: "https://andesfinance.vercel.app/",
 		description: "um app desenvolvido para organizar os gastos",
 		technologies: ["react", "typescript", "shadcnUI", "recharts"],
+		right: true,
 	},
 	{
 		image: "https://i.imgur.com/cjexL9v.png",
@@ -26,20 +28,21 @@ export const DataProjects: ProjectType[] = [
 		technologies: ["react", "tailwind", "typescript"],
 	},
 	{
-		image: "https://i.imgur.com/RD1G516.png",
+		image: "https://i.imgur.com/5v6FdXK.png",
 		title: "Planejador de metas semanais",
 		href: "https://github.com/VitorAndes/nlw-pocket-frontend",
 		url: "https://planejador-semanal-andes.vercel.app/",
 		description:
 			"um aplicativo desenvolvido para auxiliar os usuários na definição, acompanhamento e realização de suas metas semanais.",
 		technologies: ["react", "typescript", "tailwind", "fastify"],
+		right: true,
 	},
 	{
-		image: "https://i.imgur.com/a3cYXNu.png",
-		title: "BeautySalon",
+		image: "https://i.imgur.com/KpQySlx.png",
+		title: "EsteticaGio",
 		href: "https://github.com/VitorAndes/code-beautysalon",
 		url: "https://vitorandes.github.io/code-beautysalon/",
-		description: "Uma landing page de salão de beleza",
-		technologies: ["html", "css", "javascript"],
+		description: "uma landing page para uma profissional de estetica ",
+		technologies: ["Vue.js", "Less", "Typescript"],
 	},
 ];
