@@ -1,7 +1,7 @@
-import JavascriptLogo from "../../public/Javascript-logo.png";
-import NodeLogo from "../../public/Node-logo.png";
-import ReactLogo from "../../public/React-logo.png";
-import TypescriptLogo from "../../public/Typescript-logo.png";
+import JavascriptLogo from "@/assets/Javascript-logo.png";
+import NodeLogo from "@/assets/Node-logo.png";
+import ReactLogo from "@/assets/React-logo.png";
+import TypescriptLogo from "@/assets/Typescript-logo.png";
 
 interface TechnologiesType {
 	name: string;

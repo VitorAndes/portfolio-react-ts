@@ -11,7 +11,7 @@ export function Projects() {
 						{project.right ? (
 							<div className="flex justify-between gap-5">
 								<a
-									className="w-[800px]"
+									className="w-[700px]"
 									href={project.url}
 									target="_blank"
 									rel="noreferrer"
@@ -73,7 +73,7 @@ export function Projects() {
 									</div>
 								</div>
 								<a
-									className="w-[800px]"
+									className="w-[700px]"
 									href={project.url}
 									target="_blank"
 									rel="noreferrer"
