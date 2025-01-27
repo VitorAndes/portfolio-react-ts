@@ -21,8 +21,8 @@ export const DataProjects: ProjectType[] = [
 	{
 		image: "https://i.imgur.com/KpQySlx.png",
 		title: "EsteticaGio",
-		href: "https://github.com/VitorAndes/code-beautysalon",
-		url: "https://vitorandes.github.io/code-beautysalon/",
+		href: "https://github.com/VitorAndes/Esteticagio",
+		url: "https://esteticagio.vercel.app/",
 		description: "uma landing page para uma profissional de estetica ",
 		technologies: ["Vue.js", "Less", "Typescript"],
 	},
