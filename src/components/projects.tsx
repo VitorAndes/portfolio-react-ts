@@ -5,7 +5,7 @@ import { Badge } from "./ui/badge";
 export function Projects() {
 	return (
 		<>
-			<div className="flex flex-col justify-center gap-32 p-12">
+			<div className="flex flex-col justify-center items-center gap-32 p-12">
 				{DataProjects.map((project) => (
 					<div className="max-w-7xl" key={project.title}>
 						{project.right ? (

@@ -23,7 +23,7 @@ export const DataLinks: LinksType[] = [
 	{
 		id: 3,
 		name: "Instagram",
-		href: "#",
+		href: "https://www.instagram.com/vtr_andes/",
 		icon: Instagram,
 	},
 ];

@@ -1,5 +1,5 @@
 import { DataLinks } from "@/data/dataLinks";
-import { Mail, Send } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Contact() {
 	return (
@@ -32,55 +32,23 @@ export function Contact() {
 							return (
 								<li
 									key={link.id}
-									className="flex gap-2 items-center text-lg font-light"
+									className="flex gap-2 items-center text-lg font-light hover:text-violet-600"
 								>
 									<LinkIcon />
-									<a href={link.href}>{link.name}</a>
+									<a target="_blank" rel="noreferrer" href={link.href}>
+										{link.name}
+									</a>
 								</li>
 							);
 						})}
 					</ul>
 				</div>
 			</div>
-			<form className="flex flex-col gap-8 flex-1" action="">
-				<div className="flex flex-col gap-4 w-full">
-					<label className="font-bold text-lg" htmlFor="name">
-						Nome
-					</label>
-					<input
-						className="p-2 rounded-md outline-none "
-						id="Name"
-						type="text"
-					/>
-				</div>
-				<div className="flex flex-col gap-4 w-full">
-					<label className="font-bold text-lg" htmlFor="Email">
-						Email
-					</label>
-					<input
-						className="p-2 rounded-md outline-none"
-						id="Email"
-						type="email"
-					/>
-				</div>
-				<div className="flex flex-col gap-4 w-full">
-					<label className="font-bold text-lg" htmlFor="Message">
-						Mensagem
-					</label>
-					<textarea
-						className="p-2 rounded-md outline-none resize-y"
-						id="Message"
-						rows={8}
-					/>
-				</div>
-				<button
-					className="flex items-center justify-center gap-2 font-bold bg-zinc-950 text-white p-4 shadow-sm shadow-violet-600 hover:bg-zinc-900"
-					type="submit"
-				>
-					Enviar
-					<Send />
-				</button>
-			</form>
+			<img
+				className="max-w-[650px] rounded-3xl shadow shadow-violet-600"
+				src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1738010718~exp=1738014318~hmac=b7e53e125127900539629df5826824883392204473370b275042919fc592f04c&w=740"
+				alt="sending message"
+			/>
 		</>
 	);
 }
