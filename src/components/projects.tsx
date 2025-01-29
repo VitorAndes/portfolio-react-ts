@@ -13,12 +13,14 @@ export function Projects() {
 								<a
 									className="w-[700px]"
 									href={project.url}
+									draggable="false"
 									target="_blank"
 									rel="noreferrer"
 								>
 									<img
 										src={project.image}
-										className="w-full h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tr-[40px] rounded-b-[40px]"
+										draggable="false"
+										className="w-full h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tl-[40px] rounded-b-[40px]"
 										alt="Imagem do projeto"
 									/>
 								</a>
@@ -77,10 +79,12 @@ export function Projects() {
 									href={project.url}
 									target="_blank"
 									rel="noreferrer"
+									draggable="false"
 								>
 									<img
 										src={project.image}
-										className="w-full h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tl-[40px] rounded-b-[40px]"
+										draggable="false"
+										className="w-full h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tr-[40px] rounded-b-[40px]"
 										alt="Imagem do projeto"
 									/>
 								</a>

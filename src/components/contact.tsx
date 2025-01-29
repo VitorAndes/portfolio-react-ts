@@ -32,10 +32,15 @@ export function Contact() {
 							return (
 								<li
 									key={link.id}
-									className="flex gap-2 items-center text-lg font-light hover:text-violet-600"
+									className="flex gap-2 items-center text-lg font-light"
 								>
-									<LinkIcon />
-									<a target="_blank" rel="noreferrer" href={link.href}>
+									<LinkIcon className="hover:text-violet-600" />
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className="hover:text-violet-600"
+										href={link.href}
+									>
 										{link.name}
 									</a>
 								</li>
@@ -46,6 +51,7 @@ export function Contact() {
 			</div>
 			<img
 				className="max-w-[650px] rounded-3xl shadow shadow-violet-600"
+				draggable="false"
 				src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1738010718~exp=1738014318~hmac=b7e53e125127900539629df5826824883392204473370b275042919fc592f04c&w=740"
 				alt="sending message"
 			/>
