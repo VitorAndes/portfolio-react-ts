@@ -1,11 +1,9 @@
 import { DataCourses } from "@/data/dataCourses";
-import { Separator } from "./ui/separator";
 
 export function Courses() {
 	return (
 		<>
 			<h1 className="font-bold text-xl text-white">Courses</h1>
-			<Separator className="mt-3 mb-8" />
 			<ol className="relative border-r border-gray-200">
 				{DataCourses.map((courses) => {
 					return (
