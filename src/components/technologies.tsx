@@ -3,7 +3,7 @@ import { DataTechnologies } from "@/data/dataTechnologies";
 export function Technologies() {
 	return (
 		<>
-			<div className="flex flex-wrap gap-x-12 p-4">
+			<div className="flex gap-x-1 lg:gap-x-12 p-4">
 				{DataTechnologies.map((Technologies) => {
 					return (
 						<img
@@ -11,7 +11,7 @@ export function Technologies() {
 							alt={Technologies.name}
 							src={Technologies.icon}
 							draggable="false"
-							className="w-52 h-52"
+							className="min-w-20"
 						/>
 					);
 				})}
