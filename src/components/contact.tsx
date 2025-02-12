@@ -50,7 +50,7 @@ export function Contact() {
 				</div>
 			</div>
 			<img
-				className="min-w-20 max-w-3xl rounded-3xl shadow shadow-violet-600"
+				className="w-72 lg:flex-1 rounded-3xl shadow shadow-violet-600"
 				draggable="false"
 				src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1738010718~exp=1738014318~hmac=b7e53e125127900539629df5826824883392204473370b275042919fc592f04c&w=740"
 				alt="sending message"

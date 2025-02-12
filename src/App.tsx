@@ -7,7 +7,7 @@ import { Technologies } from "./components/technologies";
 export default function App() {
 	return (
 		<div className="flex flex-col items-center">
-			<main className="max-w-7xl">
+			<main className="w-full lg:max-w-7xl">
 				<section
 					id="About"
 					className="bg-[url('@/assets/bg-about.webp')] rounded-b-[50px] bg-cover h-screen flex flex-col lg:flex-row-reverse justify-center items-center gap-5 w-full"
@@ -25,7 +25,7 @@ export default function App() {
 				</section>
 				<section
 					id="Contact"
-					className="flex flex-col xl:flex-row items-center gap-4 p-4 lg:p-12 mt-12"
+					className="flex flex-col lg:flex-row items-center gap-4 p-4 lg:p-12 mt-12"
 				>
 					<Contact />
 				</section>

@@ -22,14 +22,14 @@ export function About() {
 					alt="foto de Vitor Andes"
 					draggable="false"
 					loading="lazy"
-					className="max-w-64 rounded-full border border-white shadow shadow-violet-600"
+					className="max-w-60 rounded-full border border-white shadow shadow-violet-600"
 				/>
 			</motion.figure>
 			<motion.h1
 				initial={{ opacity: 0, scale: 0 }}
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 1.5 }}
-				className="md:text-4xl w-52 md:w-96 text-center font-bold text-white -tracking-wider"
+				className="text-lg md:text-4xl w-52 md:w-96 text-center font-bold text-white -tracking-wider"
 			>
 				Hey ! I'm Vitor Andes, a{" "}
 				<motion.h1

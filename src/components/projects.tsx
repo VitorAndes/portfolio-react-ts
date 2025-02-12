@@ -10,7 +10,7 @@ export function Projects() {
 					{project.right ? (
 						<div className="flex flex-col lg:flex-row justify-between items-center md:items-stretch gap-5">
 							<a
-								className="min-w-80 lg:w-[700px]"
+								className="w-96 lg:w-[700px]"
 								href={project.url}
 								draggable="false"
 								target="_blank"
@@ -74,7 +74,7 @@ export function Projects() {
 								</div>
 							</div>
 							<a
-								className="min-w-80 lg:w-[700px]"
+								className="w-96 lg:w-[700px]"
 								href={project.url}
 								target="_blank"
 								rel="noreferrer"

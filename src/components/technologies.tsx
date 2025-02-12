@@ -11,7 +11,7 @@ export function Technologies() {
 							alt={Technologies.name}
 							src={Technologies.icon}
 							draggable="false"
-							className="min-w-20"
+							className="w-24 lg:w-40"
 						/>
 					);
 				})}
