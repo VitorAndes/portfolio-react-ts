@@ -10,7 +10,7 @@ export function Projects() {
 					{project.right ? (
 						<div className="flex flex-col lg:flex-row justify-between items-center md:items-stretch gap-5">
 							<a
-								className="w-96 lg:w-[700px]"
+								className="w-80 md:w-[700px]"
 								href={project.url}
 								draggable="false"
 								target="_blank"
@@ -28,14 +28,14 @@ export function Projects() {
 								<a
 									href={project.href}
 									target="_blank"
-									className="text-lg inline-flex items-center gap-2 text-white font-bold mt-4 hover:text-violet-600 transition-colors"
+									className="text-lg font-BreeSerif inline-flex items-center gap-2  mt-4 hover:text-violet-600 transition-colors"
 									rel="noreferrer"
 								>
 									{project.title}
 									<Link size={16} />
 								</a>
 								<div className="flex flex-col h-full pb-16 justify-between">
-									<p className="text-base font-light my-4">
+									<p className="font-AveriaSerif text-zinc-300 text-base font-light my-4">
 										{project.description}
 									</p>
 									<div className="flex flex-wrap gap-1">
@@ -54,14 +54,14 @@ export function Projects() {
 								<a
 									href={project.href}
 									target="_blank"
-									className="text-lg inline-flex items-center gap-2 text-white font-bold mt-4 hover:text-violet-600 transition-colors"
+									className="font-BreeSerif text-lg inline-flex items-center gap-2 text-white  mt-4 hover:text-violet-600 transition-colors"
 									rel="noreferrer"
 								>
 									{project.title}
 									<Link size={16} />
 								</a>
 								<div className="flex flex-col h-full pb-16 justify-between">
-									<p className="text-base font-light my-4">
+									<p className="font-AveriaSerif text-zinc-300 text-base font-light my-4">
 										{project.description}
 									</p>
 									<div className="flex flex-wrap gap-1">
@@ -74,7 +74,7 @@ export function Projects() {
 								</div>
 							</div>
 							<a
-								className="w-96 lg:w-[700px]"
+								className="w-80	md:w-[700px]"
 								href={project.url}
 								target="_blank"
 								rel="noreferrer"

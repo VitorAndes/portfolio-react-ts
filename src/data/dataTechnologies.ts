@@ -1,7 +1,8 @@
-import JavascriptLogo from "@/assets/Javascript-logo.png";
-import NodeLogo from "@/assets/Node-logo.png";
-import ReactLogo from "@/assets/React-logo.png";
-import TypescriptLogo from "@/assets/Typescript-logo.png";
+import JavascriptLogo from "@/assets/Javascript-logo.webp";
+import ReactLogo from "@/assets/React-logo.webp";
+import TailwindLogo from "@/assets/Tailwind-Logo.webp";
+import TypescriptLogo from "@/assets/Typescript-logo.webp";
+import NodeLogo from "@/assets/node-logo.webp";
 
 interface TechnologiesType {
 	name: string;
@@ -25,12 +26,12 @@ export const DataTechnologies: TechnologiesType[] = [
 		name: "NodeJs",
 		icon: NodeLogo,
 	},
-	// {
-	// 	name: "MySQL",
-	// 	icon: "https://images.sftcdn.net/images/t_app-icon-m/p/917c77e8-96d1-11e6-8453-00163ed833e7/3780880766/mysql-com-icon.png",
-	// },
-	// {
-	// 	name: "Java",
-	// 	icon: "https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256",
-	// },
+	{
+		name: "MySQL",
+		icon: "https://images.sftcdn.net/images/t_app-icon-m/p/917c77e8-96d1-11e6-8453-00163ed833e7/3780880766/mysql-com-icon.png",
+	},
+	{
+		name: "Tailwind css",
+		icon: TailwindLogo,
+	},
 ];
