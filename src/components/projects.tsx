@@ -19,7 +19,7 @@ export function Projects() {
 								<img
 									src={project.image}
 									draggable="false"
-									className="w-full lg:h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tl-[40px] rounded-b-[40px]"
+									className="w-full lg:h-96 shadow-sm shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tl-[40px] rounded-b-[40px]"
 									alt="Imagem do projeto"
 								/>
 							</a>
@@ -83,7 +83,7 @@ export function Projects() {
 								<img
 									src={project.image}
 									draggable="false"
-									className="w-full lg:h-96 shadow shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tr-[40px] rounded-b-[40px]"
+									className="w-full lg:h-96 shadow-sm shadow-violet-600 transition-all duration-500 border border-violet-600 hover:shadow-zinc-200 rounded-tr-[40px] rounded-b-[40px]"
 									alt="Imagem do projeto"
 								/>
 							</a>

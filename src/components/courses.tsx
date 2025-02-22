@@ -9,7 +9,7 @@ export function Courses() {
 					return (
 						<li
 							key={courses.name}
-							className="flex flex-col gap-1 border border-white shadow shadow-violet-600 rounded-md p-4 max-w-xl mb-10 ms-4"
+							className="flex flex-col gap-1 border border-white shadow-sm shadow-violet-600 rounded-md p-4 max-w-xl mb-10 ms-4"
 						>
 							{/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
 							<div className="absolute w-3 h-3 bg-zinc-200 rounded-full mt-1.5 -start-1.5 border border-white "></div>
