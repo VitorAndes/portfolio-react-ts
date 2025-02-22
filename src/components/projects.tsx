@@ -40,9 +40,7 @@ export function Projects() {
 									</p>
 									<div className="flex flex-wrap gap-1">
 										{project.technologies.map((tech) => (
-											<Badge key={tech} variant={"secondary"}>
-												{tech}
-											</Badge>
+											<Badge key={tech}>{tech}</Badge>
 										))}
 									</div>
 								</div>
@@ -66,9 +64,7 @@ export function Projects() {
 									</p>
 									<div className="flex flex-wrap gap-1">
 										{project.technologies.map((tech) => (
-											<Badge key={tech} variant={"secondary"}>
-												{tech}
-											</Badge>
+											<Badge key={tech}>{tech}</Badge>
 										))}
 									</div>
 								</div>
