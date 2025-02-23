@@ -9,6 +9,7 @@ layer(base);
   --color-text: #ffff;
 
   --animate-load: load 4s linear infinite;
+  --animate-toast: showToast 2s ease-in-out forwards;
 
   @keyframes load {
     0%,
@@ -45,6 +46,20 @@ layer(base);
     60%,
     80% {
       width: 100%;
+    }
+  }
+
+  @keyframes showToast {
+    0%,
+    100% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    20%,
+    90% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

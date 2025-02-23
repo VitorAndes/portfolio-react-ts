@@ -1,7 +1,21 @@
 import { DataLinks } from "@/data/dataLinks";
 import { Mail } from "lucide-react";
+import { useState } from "react";
+import { Toast } from "./ui/toast";
 
 export function Contact() {
+	const [isShowToast, setIsShowToast] = useState(false);
+
+	function copyInviteLink() {
+		navigator.clipboard.writeText("vitorandes04@gmail.com");
+		showToast();
+	}
+
+	function showToast() {
+		setIsShowToast(true);
+		setTimeout(() => setIsShowToast(false), 2100);
+	}
+
 	return (
 		<>
 			<div className="flex flex-col gap-12 lg:gap-24 flex-1 leading-relaxed">
@@ -19,12 +33,16 @@ export function Contact() {
 				<div>
 					<h2 className="font-Bree-serif leading-none text-2xl  mb-4">Email</h2>
 
-					<p className="font-Averia-serif flex gap-2 items-center text-lg font-light hover:text-violet-600 transition-all">
+					<button
+						type="button"
+						onClick={copyInviteLink}
+						className="font-Averia-serif inline-flex gap-2 items-center text-lg font-light hover:text-violet-600 transition-all cursor-copy"
+					>
 						<span>
 							<Mail />
 						</span>
 						vitorandes04@gmail.com
-					</p>
+					</button>
 				</div>
 				<div>
 					<h2 className="font-Bree-serif text-2xl mb-4">Redes Sociais</h2>
@@ -47,11 +65,14 @@ export function Contact() {
 				</div>
 			</div>
 			<img
-				className="w-72 lg:flex-1 rounded-3xl shadow-sm shadow-violet-600"
+				className="w-72 hidden lg:flex lg:flex-1 rounded-3xl shadow-sm shadow-violet-600"
 				draggable="false"
 				src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1738010718~exp=1738014318~hmac=b7e53e125127900539629df5826824883392204473370b275042919fc592f04c&w=740"
 				alt="sending message"
 			/>
+			<Toast className={`${isShowToast ? "animate-toast" : "hidden"}`}>
+				<h1>Email copiado para a área de transferência!</h1>
+			</Toast>
 		</>
 	);
 }

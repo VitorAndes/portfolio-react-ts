@@ -23,7 +23,7 @@ export default function App() {
 				</section>
 				<section
 					id="Contact"
-					className="flex flex-col lg:flex-row items-center gap-4 p-4 lg:p-12 mt-12"
+					className="relative flex flex-col lg:flex-row items-center gap-4 p-4 lg:p-12 "
 				>
 					<Contact />
 				</section>
