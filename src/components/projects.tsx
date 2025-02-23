@@ -28,17 +28,17 @@ export function Projects() {
 								<a
 									href={project.href}
 									target="_blank"
-									className="text-lg font-BreeSerif inline-flex items-center gap-2  mt-4 hover:text-violet-600 transition-colors"
+									className="text-lg font-Bree-serif inline-flex items-center gap-2  mt-4 hover:text-violet-600 transition-colors"
 									rel="noreferrer"
 								>
 									{project.title}
 									<Link size={16} />
 								</a>
 								<div className="flex flex-col h-full pb-16 justify-between">
-									<p className="font-AveriaSerif text-zinc-300 text-base font-light my-4">
+									<p className="font-Averia-serif text-zinc-300 text-base font-light my-4">
 										{project.description}
 									</p>
-									<div className="flex flex-wrap gap-1">
+									<div className="flex flex-wrap gap-2">
 										{project.technologies.map((tech) => (
 											<Badge key={tech}>{tech}</Badge>
 										))}
@@ -52,17 +52,17 @@ export function Projects() {
 								<a
 									href={project.href}
 									target="_blank"
-									className="font-BreeSerif text-lg inline-flex items-center gap-2 text-white  mt-4 hover:text-violet-600 transition-colors"
+									className="font-Bree-serif text-lg inline-flex items-center gap-2 text-white  mt-4 hover:text-violet-600 transition-colors"
 									rel="noreferrer"
 								>
 									{project.title}
 									<Link size={16} />
 								</a>
 								<div className="flex flex-col h-full pb-16 justify-between">
-									<p className="font-AveriaSerif text-zinc-300 text-base font-light my-4">
+									<p className="font-Averia-serif text-zinc-300 text-base font-light my-4">
 										{project.description}
 									</p>
-									<div className="flex flex-wrap gap-1">
+									<div className="flex flex-wrap gap-2">
 										{project.technologies.map((tech) => (
 											<Badge key={tech}>{tech}</Badge>
 										))}

@@ -8,5 +8,43 @@ layer(base);
 
   --color-text: #ffff;
 
-  --color-about: ;
+  --animate-load: load 4s linear infinite;
+
+  @keyframes load {
+    0%,
+    50%,
+    100% {
+      width: 0;
+    }
+
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+      border-right-color: transparent;
+    }
+
+    11%,
+    21%,
+    31%,
+    41%,
+    51%,
+    61%,
+    71%,
+    81%,
+    91% {
+      border-right-color: oklch(0.541 0.281 293.009);
+    }
+
+    60%,
+    80% {
+      width: 100%;
+    }
+  }
 }

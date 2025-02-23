@@ -17,7 +17,7 @@ export default function App() {
 
 				<section
 					id="Projects"
-					className="bg-zinc-950 rounded-t-[50px] rounded-b-3xl flex flex-col m-auto justify-center items-center md:gap-32 lg:p-12"
+					className="bg-zinc-950 rounded-t-[50px] rounded-b-3xl flex flex-col justify-center items-center md:gap-32 lg:p-12"
 				>
 					<Projects />
 				</section>
