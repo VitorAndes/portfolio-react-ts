@@ -1,19 +1,17 @@
 import { DataLinks } from "@/data/dataLinks";
-import { useState } from "react";
-import { Toast } from "./ui/toast";
 
 export function Contact() {
-	const [isShowToast, setIsShowToast] = useState(false);
+	// const [isShowToast, setIsShowToast] = useState(false);
 
-	function copyInviteLink() {
-		navigator.clipboard.writeText("vitorandes04@gmail.com");
-		showToast();
-	}
+	// function copyInviteLink() {
+	// 	navigator.clipboard.writeText("vitorandes04@gmail.com");
+	// 	showToast();
+	// }
 
-	function showToast() {
-		setIsShowToast(true);
-		setTimeout(() => setIsShowToast(false), 2100);
-	}
+	// function showToast() {
+	// 	setIsShowToast(true);
+	// 	setTimeout(() => setIsShowToast(false), 2100);
+	// }
 
 	return (
 		<>
@@ -39,9 +37,9 @@ export function Contact() {
 				</div>
 			</div>
 
-			<Toast className={`${isShowToast ? "animate-toast" : "hidden"}`}>
+			{/* <Toast className={`${isShowToast ? "animate-toast" : "hidden"}`}>
 				<h1>Email copiado para a área de transferência!</h1>
-			</Toast>
+			</Toast> */}
 		</>
 	);
 }
