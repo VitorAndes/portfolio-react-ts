@@ -7,7 +7,7 @@ interface BadgeProps {
 export function Badge(props: BadgeProps) {
 	return (
 		<div
-			className="bg-violet-600 px-5 h-9 font-Bree-serif rounded-md flex items-center hover:bg-violet-400"
+			className="bg-[#16161A] px-5 h-9 font-Bree-serif rounded-md flex items-center hover:bg-violet-600 transition-all shadow shadow-violet-600"
 			{...props}
 		/>
 	);

@@ -1,65 +1,79 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bree+Serif&display=swap")
-layer(base);
+	layer(base);
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7f22fe;
+	border-radius: 10px;
+}
 
 @theme {
-  --font-Bree-serif: Bree Serif;
-  --font-Averia-serif: Averia Serif Libre;
+	--font-Bree-serif: Bree Serif;
+	--font-Averia-serif: Averia Serif Libre;
 
-  --color-text: #ffff;
+	--color-text: #ffff;
 
-  --animate-load: load 4s linear infinite;
-  --animate-toast: showToast 2s ease-in-out forwards;
+	--animate-load: load 4s linear infinite;
+	--animate-toast: showToast 2s ease-in-out forwards;
 
-  @keyframes load {
-    0%,
-    50%,
-    100% {
-      width: 0;
-    }
+	@keyframes load {
+		0%,
+		50%,
+		100% {
+			width: 0;
+		}
 
-    10%,
-    20%,
-    30%,
-    40%,
-    50%,
-    60%,
-    70%,
-    80%,
-    90%,
-    100% {
-      border-right-color: transparent;
-    }
+		10%,
+		20%,
+		30%,
+		40%,
+		50%,
+		60%,
+		70%,
+		80%,
+		90%,
+		100% {
+			border-right-color: transparent;
+		}
 
-    11%,
-    21%,
-    31%,
-    41%,
-    51%,
-    61%,
-    71%,
-    81%,
-    91% {
-      border-right-color: oklch(0.541 0.281 293.009);
-    }
+		11%,
+		21%,
+		31%,
+		41%,
+		51%,
+		61%,
+		71%,
+		81%,
+		91% {
+			border-right-color: oklch(0.541 0.281 293.009);
+		}
 
-    60%,
-    80% {
-      width: 100%;
-    }
-  }
+		60%,
+		80% {
+			width: 100%;
+		}
+	}
 
-  @keyframes showToast {
-    0%,
-    100% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
+	@keyframes showToast {
+		0%,
+		100% {
+			opacity: 0;
+			transform: translateY(100px);
+		}
 
-    20%,
-    90% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+		20%,
+		90% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 }
