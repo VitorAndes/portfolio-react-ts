@@ -16,6 +16,10 @@
 	border-radius: 10px;
 }
 
+body {
+	zoom: 0.8;
+}
+
 @theme {
 	--font-Bree-serif: Bree Serif;
 	--font-Averia-serif: Averia Serif Libre;

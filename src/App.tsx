@@ -6,7 +6,7 @@ import "./index.css";
 
 export default function App() {
 	return (
-		<div className="flex justify-center h-[950px] max-w-7xl bg-[#242629]/40 rounded-2xl overflow-hidden shadow shadow-violet-300 backdrop-blur-sm">
+		<div className="flex justify-center h-[950px] max-w-7xl bg-[#242629]/40 rounded-2xl overflow-hidden shadow shadow-violet-300 backdrop-blur-sm m-5">
 			<aside
 				id="About"
 				className=" w-96 p-4 border-violet-600 shadow shadow-violet-300 border-r"
