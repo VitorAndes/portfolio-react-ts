@@ -7,12 +7,10 @@ export function Contact() {
 	const initial = {
 		y: -100,
 		opacity: 0,
-		scale: 0,
 	};
 	const animate = {
 		y: 0,
 		opacity: 1,
-		scale: 1,
 	};
 
 	return (
@@ -36,9 +34,9 @@ export function Contact() {
 									animate={animate}
 									transition={link.transition}
 									key={link.id}
-									className="inline-flex gap-2 items-center text-lg font-light transition-all hover:text-violet-600 hover:scale-105 hover:-translate-y-1 active:translate-y-0"
+									className="inline-flex gap-2 items-center text-lg font-light  hover:text-violet-600 "
 								>
-									<LinkIcon className="text-violet-600" />
+									<LinkIcon className="text-violet-600 " />
 									<a target="_blank" rel="noreferrer" href={link.href}>
 										{link.name}
 									</a>
