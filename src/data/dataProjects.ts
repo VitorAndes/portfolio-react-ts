@@ -5,7 +5,6 @@ export type ProjectType = {
 	url: string;
 	description: string;
 	technologies: string[];
-	right?: boolean;
 };
 
 export const DataProjects: ProjectType[] = [
@@ -16,7 +15,6 @@ export const DataProjects: ProjectType[] = [
 		url: "https://andesfinance.vercel.app/",
 		description: "um app desenvolvido para organizar os gastos",
 		technologies: ["react", "typescript", "shadcnUI", "recharts"],
-		right: true,
 	},
 	{
 		image: "https://i.imgur.com/KpQySlx.png",

@@ -26,8 +26,7 @@ body {
 
 	--color-text: #ffff;
 
-	--animate-load: load 4s linear infinite;
-	--animate-toast: showToast 2s ease-in-out forwards;
+	--animate-load: load 3s linear infinite;
 
 	@keyframes load {
 		0%,
@@ -64,20 +63,6 @@ body {
 		60%,
 		80% {
 			width: 100%;
-		}
-	}
-
-	@keyframes showToast {
-		0%,
-		100% {
-			opacity: 0;
-			transform: translateY(100px);
-		}
-
-		20%,
-		90% {
-			opacity: 1;
-			transform: translateY(0);
 		}
 	}
 }
