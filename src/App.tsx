@@ -27,7 +27,7 @@ export default function App() {
 				<About />
 			</aside>
 
-			<main className="w-full flex flex-col mt-5 lg:mt-0 gap-12 px-6 lg:px-12 py-5  overflow-y-scroll overflow-hidden">
+			<main className="w-full flex flex-col mt-5 lg:mt-0 gap-12 px-6 lg:px-12 py-5 lg:overflow-y-scroll lg:overflow-hidden">
 				<section className="flex flex-col justify-center gap-3">
 					<div className="flex flex-col gap-3 text-start">
 						<motion.h1
