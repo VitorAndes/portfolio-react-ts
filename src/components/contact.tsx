@@ -15,7 +15,7 @@ export function Contact() {
 
 	return (
 		<>
-			<div className="flex flex-col gap-12 lg:gap-24 flex-1 leading-relaxed">
+			<div className="flex  gap-12 lg:gap-24 flex-1 leading-relaxed">
 				<div>
 					<motion.h2
 						initial={initial}
@@ -25,7 +25,7 @@ export function Contact() {
 					>
 						Redes Sociais
 					</motion.h2>
-					<ul className="inline-flex flex-col font-Averia-serif font-light gap-3">
+					<ul className="inline-flex md:flex-col font-Averia-serif font-light gap-5">
 						{DataLinks.map((link) => {
 							const LinkIcon = link.icon;
 							return (

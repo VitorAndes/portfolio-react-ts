@@ -18,16 +18,16 @@ export default function App() {
 			initial={{ translateY: -200, opacity: 0, scale: 0 }}
 			animate={{ opacity: 1, scale: 1, translateY: 0 }}
 			transition={{ duration: 0.8, delay: 0.1, ease: easeInOut }}
-			className=" flex justify-center h-[950px] max-w-7xl bg-[#242629]/40 rounded-2xl overflow-hidden shadow shadow-violet-300 backdrop-blur-sm m-5"
+			className="flex flex-col lg:flex-row justify-center lg:h-[950px] max-w-7xl bg-[#242629]/40 rounded-2xl overflow-hidden shadow shadow-violet-300 backdrop-blur-sm m-5"
 		>
 			<aside
 				id="About"
-				className=" w-96 p-4 border-violet-600 shadow shadow-violet-300 border-r"
+				className=" lg:w-96 py-5 px-6  border-violet-600 shadow shadow-violet-300 border-r"
 			>
 				<About />
 			</aside>
 
-			<main className="w-full flex flex-col gap-12 px-12 py-5 overflow-y-scroll overflow-hidden">
+			<main className="w-full flex flex-col mt-5 lg:mt-0 gap-12 px-6 lg:px-12 py-5  overflow-y-scroll overflow-hidden">
 				<section className="flex flex-col justify-center gap-3">
 					<div className="flex flex-col gap-3 text-start">
 						<motion.h1
@@ -42,7 +42,7 @@ export default function App() {
 							initial={initial}
 							animate={animate}
 							transition={{ ease: easeInOut, delay: 1 }}
-							className="font-Averia-serif text-xl text-zinc-300 tracking-wide leading-6 w-[650px] mt-4"
+							className="font-Averia-serif text-xl text-zinc-300 tracking-wide leading-6 lg:w-[650px] mt-4"
 						>
 							Um desenvolvedor especializado em front-end. Com um histórico
 							sólido em{" "}

@@ -22,7 +22,7 @@ export function Technologies() {
 							alt={Technologies.name}
 							src={Technologies.icon}
 							draggable="false"
-							className="w-8 md:w-15"
+							className="w-10 md:w-15"
 						/>
 					);
 				})}
