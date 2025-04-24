@@ -7,13 +7,13 @@
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px grey;
-	border-radius: 10px;
+	box-shadow: inset 0 0 2px grey;
+	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(190deg, #7f22fe 50%, #fff 100%);
-	border-radius: 10px;
+	background: linear-gradient(10deg, #45128c 30%, #242629 70%);
+	border-radius: 5px;
 }
 
 body {

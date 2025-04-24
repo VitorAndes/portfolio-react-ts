@@ -18,11 +18,11 @@ export default function App() {
 			initial={{ translateY: -200, opacity: 0, scale: 0 }}
 			animate={{ opacity: 1, scale: 1, translateY: 0 }}
 			transition={{ duration: 0.8, delay: 0.1, ease: easeInOut }}
-			className="flex flex-col lg:flex-row justify-center lg:h-[950px] max-w-7xl bg-[#242629]/40 rounded-2xl overflow-hidden shadow shadow-violet-300 backdrop-blur-sm m-5"
+			className="flex flex-col lg:flex-row justify-center lg:h-[950px] max-w-7xl bg-[#242629]/50 rounded-md overflow-hidden backdrop-blur-sm m-5"
 		>
 			<aside
 				id="About"
-				className=" lg:w-96 py-5 px-6  border-violet-600 shadow shadow-violet-300 border-r"
+				className=" lg:w-96 py-5 px-6  border-violet-600 border-b lg:border-b-0 lg:border-r"
 			>
 				<About />
 			</aside>

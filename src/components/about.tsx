@@ -29,7 +29,7 @@ export function About() {
 						alt="foto de Vitor Andes"
 						draggable="false"
 						loading="lazy"
-						className="w-60 md:w-80 mb-5 rounded-xl shadow shadow-violet-600"
+						className="w-60 md:w-80 mb-5 rounded-xl shadow-xs shadow-violet-600"
 					/>
 
 					<motion.h1
